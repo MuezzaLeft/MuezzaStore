@@ -80,7 +80,7 @@ class AuthController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'password' => bcrypt($request->password),
-            'point' => 10000,
+            'point' => 100000,
         ]);
 
         if ($user) {
